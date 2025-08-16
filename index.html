@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oever.art – Luxury Miniature Portraits</title>
+    <!-- Fonts for an elevated, artistic feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed navigation with anchor links -->
+    <header class="site-header">
+        <div class="logo">oever.art</div>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section with autoplay video background -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="videos/hero.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Elevate Yourself to Art</h1>
+            <p>Experience bespoke miniature portraits crafted with precision and passion. Digital or sculpted, your masterpiece awaits.</p>
+            <a href="#contact" class="primary-btn">Commission Your Portrait</a>
+        </div>
+    </section>
+
+    <!-- Features section describing digital & 3D options -->
+    <section class="features" id="features">
+        <h2>Our Creations</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <div class="feature-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="videos/feature.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="feature-text">
+                    <h3>Digital Portraits</h3>
+                    <p>Impeccable hand‑illustrated miniatures delivered in high‑resolution files. Perfect for avatars, prints or gifts.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-media">
+                    <!-- Use sculpture image from previous design as fallback if video fails -->
+                    <img src="../oever_art_site/assets/sculpture.jpg" alt="Abstract 3D sculpture representing printed miniature" />
+                </div>
+                <div class="feature-text">
+                    <h3>3D‑Printed Sculptures</h3>
+                    <p>Immortalize yourself in physical form. Our artisans sculpt and print your likeness using premium resin and expert finishing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process section showing steps, with accompanying video -->
+    <section class="process" id="process">
+        <h2>Our Process</h2>
+        <div class="process-content">
+            <div class="process-video">
+                <video controls preload="metadata">
+                    <source src="videos/process.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <h3>Capture</h3>
+                    <p>Send us photos that reflect your personality and style. Our artists use them as inspiration.</p>
+                </div>
+                <div class="step">
+                    <h3>Create</h3>
+                    <p>We meticulously craft your digital illustration or sculpt your figurine, refining every detail.</p>
+                </div>
+                <div class="step">
+                    <h3>Deliver</h3>
+                    <p>Receive your finished artwork digitally or a beautifully packaged 3D print, ready to display.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery section with video demonstration -->
+    <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <p>See our craft in motion.</p>
+        <div class="gallery-video">
+            <video controls preload="metadata">
+                <source src="videos/gallery.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Contact section: call to action with no user input form -->
+    <section class="contact" id="contact">
+        <h2>Commission a Portrait</h2>
+        <p>Ready to turn yourself into a work of art? Contact us to discuss your vision and receive a personalised quote.</p>
+        <a href="mailto:info@oever.art" class="primary-btn">Email Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> oever.art. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
